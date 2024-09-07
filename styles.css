@@ -1,55 +1,105 @@
-html {
-    background-color: aquamarine;
-}
-
 body {
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     display: flex;
-    justify-content: center;
-    margin-bottom: 200px;
+    justify-content: space-between;
+    background-color: rgb(5, 140, 173);
+    height: 50px;
 }
 
 ul {
-    list-style-type: none;
     display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
     gap: 20px;
 }
 
+li {
+    color: white;
+}
+
+.right-side, .left-side {
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+.left-side {
+    margin-left: 0;
+}
+
+ .right-side {
+    margin-right: 30px;
+ }
+
 a {
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+.body {
+    flex: 1;
+    display: flex;
+}
+
+.tech-stack {
+    background-color: rgb(5, 140, 173);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.describe-stack {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.stack {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.body-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 .intro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-
+    margin: 20px;
+    flex: 1;
 }
 
 h1, h2 {
     margin: 0;
+    font-size: 40px;
 }
 
 h3 {
-    margin-bottom: 0;
     margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 35px;
 }
-.intro-para {
-    font-weight: 500;
-    font-size: 25px;
-    width: 600px;
-    padding: 10px;
-    margin: 0;
+
+.about-me {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.profile-photo {
+    margin: 20px;
+    flex: 1;
 }
 
 #profile-pic {
@@ -57,22 +107,11 @@ h3 {
     height: 400px;
 }
 
-.tech-stack {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px;
-}
-
-#css, #html, #js, #node, #react, #postgres, #express {
-    width: 50px;
-    height: 50px;
-}
-
 .social-links {
     display: flex;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 15px;
+    margin-top: 15px;
+    flex: 1;
 }
 
 #github, #linkedin {
