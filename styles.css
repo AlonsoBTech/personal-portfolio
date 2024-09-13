@@ -278,9 +278,14 @@ footer {
     .tech {
         display: flex;
         flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
     }
     .social {
+        display: flex;
         font-size: 40px;
+        gap: 20px;
     }
     .stack-img {
         width: 15vw;
@@ -288,6 +293,9 @@ footer {
     .soft {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
     }
     .project-list {
         display: flex;
