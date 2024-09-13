@@ -215,7 +215,8 @@ h2 {
 }
 
 .project-img {
-    width: 20vw;
+    width: 300px;
+    height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -267,21 +268,6 @@ footer {
 
 .footer a {
     color: #e5e7eb;
-}
-
-
-
-@media(max-width:1280px){
-    .social{
-        font-size: 50px;
-        gap: 30px;
-    }
-    .project-img {
-        width: 2ovw;
-    }
-    .project-item{
-        max-width: 600px;
-    }
 }
 
 @media(max-width:768px){
