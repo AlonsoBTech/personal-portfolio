@@ -145,6 +145,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .stack {
@@ -171,6 +172,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .soft li {
