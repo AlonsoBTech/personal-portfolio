@@ -270,6 +270,37 @@ footer {
     color: #e5e7eb;
 }
 
+@media(min-width:769px) and (max-width:884px){
+    #profile-pic{
+        width: 50vw;
+    }
+    .social{
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+    }
+    .tech{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .stack-img{
+        width: 10vw;
+    }
+    .soft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .project-buttons{
+        gap: 20px;
+    }
+}
+
 @media(max-width:768px){
     .about-container {
         display: flex;
