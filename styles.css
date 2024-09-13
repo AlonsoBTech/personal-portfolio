@@ -272,6 +272,9 @@ footer {
 }
 
 @media(max-width:884px){
+    .nav-links{
+        gap: 20px;
+    }
     #profile-pic{
         width: 50vw;
     }
