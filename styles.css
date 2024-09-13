@@ -271,7 +271,7 @@ footer {
     color: #e5e7eb;
 }
 
-@media(min-width:769px) and (max-width:884px){
+@media(max-width:884px){
     #profile-pic{
         width: 50vw;
     }
