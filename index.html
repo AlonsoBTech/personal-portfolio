@@ -4,123 +4,116 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <script src="javascript.js"></script>
         <title>Alonso Braithwaite's Portfolio</title>
     </head>
     <body>
-        <div class="header">
-            <div class="left-side">
-                Alonso.Dev
-            </div>
-            <div class="right-side">
-                <ul class="nav-bar">
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="https://docs.google.com/document/d/1HQh9-OSu0ft9PGri0E1QWRxd9ifWR-iT/pub" target="_blank">Résumé,</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="about-content">
-            <div class="body-intro">
-                <div class="intro">
-                    <h1>Alonso Braithwaite</h1>
-                    <h2>Full Stack Developer</h2>
-                    <h3 id="about">About Me</h3>
-                    <p class="about-me">
-                        Just a little something about my tech career journey. I studied a Computer Systems Technician college
-                        degree, after finishing college, I wasn't sure where to head in the world of tech so cloud became my
-                        first destination. I ventured into learning AWS where I built projects around deploying applications and 
-                        designing architecture deployment to the cloud. I assisted a startup in migrating their WordPress 
-                        website to AWS while continuing to work on my personal projects building my skills. Then the need for a 
-                        Portfolio website arose, this is where I decided to make my own website. After some research and coding, 
-                        I realized that there was a passion for web development hidden within me. Now I am eagerly upskilling 
-                        myself and I enjoying building websites as well as web applications.
-                    </p>
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <span>Alonso Braithwaite</span>
                 </div>
-                <div class="profile-photo">   
-                    <img id="profile-pic" src="./images/profile-photo.png" alt="Image of Alonso">
-                    <div class="social-links">
-                        <a href="https://github.com/AlonsoBTech" target="_blank">
-                            <img id="github" src="./images/github.png" alt="Image of Github Logo">
-                        </a>
-                        <a href="https://www.linkedin.com/in/alonso-braithwaite/" target="_blank">
-                            <img id="linkedin" src="./images/linkedin.png" alt="Image of LinkedIn Logo">
-                        </a>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="https://docs.google.com/document/d/1HQh9-OSu0ft9PGri0E1QWRxd9ifWR-iT/pub" target="_blank">Résumé</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </div>
+            </div>
+        </header>
+
+        <section class="about">
+            <div class="about-container">
+                <img id="profile-pic" src="./images/profile-photo.png">
+                <div class="text-social">
+                    <div class="about-text">
+                        <h3>Hi, I'm</h3>
+                        <h1>Alonso Braithwaite</h1>
+                        <h2>Full Stack Developer</h2>
+                        <h2 id="about-me">About Me</h2>
+                        <p class="about-para">
+                            Just a little something about my tech career journey. I studied a Computer Systems Technician college
+                            degree, after finishing college, I wasn't sure where to head in the world of tech so cloud became my
+                            first destination. I ventured into learning AWS where I built projects around deploying applications and 
+                            designing architecture deployment to the cloud. I assisted a startup in migrating their WordPress 
+                            website from CPanel to AWS while continuing to work on my personal projects building my skills. Then the need for a 
+                            Portfolio website arose, this is where I decided to make my own website. After some research and coding, 
+                            I realized that there was a passion for web development hidden within me. Now I am eagerly upskilling 
+                            myself and I enjoying building websites as well as web applications.
+                        </p>
+                    </div>
+                    <div class="social">
+                        <a href="https://github.com/AlonsoBTech" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <i class="fa-brands fa-linkedin"></i>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="skills-content">
-            <div>
-                <h2>Skills</h2>
-            </div>
-            <h3>Technology Used</h3>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-skills">Skills</h2>
             <div class="tech-stack">
-                <div class="tech-used">
-                    <div class="stack-item">
-                        <img class="stack" src="./images/css-3.png" alt="Image of CSS Logo">
-                        <p class="describe-stack">CSS</p>
+                <h3 class="tech-title">Technology Used</h3>
+                <div class="tech">
+                    <div class="stack">
+                        <img class="stack-img" src="./images/html.png" alt="">
+                        <p>HTML</p>
                     </div>
-                    <div class="stack-item">
-                        <img class="stack" src="./images/html.png" alt="Image of HTML Logo">
-                        <p class="describe-stack">HTML</p>
+                    <div class="stack">
+                        <img class="stack-img" src="./images/css-3.png" alt="">
+                        <p>CSS</p>
                     </div>
-                    <div class="stack-item">
-                        <img class="stack" src="./images/java-script.png" alt="Image of Javascript Logo">
-                        <p class="describe-stack">JavaScript</p>
+                    <div class="stack">
+                        <img class="stack-img" src="./images/java-script.png" alt="">
+                        <p>JavaScript</p>
                     </div>
                 </div>
             </div>
-            <h3>Soft Skills</h3>
-            <div>
-                <ul class="soft-skills">
-                    <li class="list-soft">Problem Solving</li>
-                    <li class="list-soft">Analytic Thinking</li>
-                    <li class="list-soft">Team Player</li>
-                    <li class="list-soft">Communication</li>
+            <div class="soft-skills">
+                <h3 class="soft-title">Soft Skills</h3>
+                <ul class="soft">
+                    <li>Problem Solving</li>
+                    <li>Team Player</li>
+                    <li>Communication</li>
+                    <li>Analytic Thinking</li>
                 </ul>
             </div>
-        </div>
-        <div class="project-content">
-            <h2>Projects</h2>
-            <div class="projects-list>">
+        </section>
+
+        <section class="projects">
+            <h2 class="section-project">Projects</h2>
+            <div class="project-list">
                 <div class="project-item">
-                    <a href=""><img class="project-img" src="./images/profile-photo.png" alt="Image of project preview"></a>
-                    <h4>Recipe Website</h4>
-                    <p>
-                        Developed a website using HTML, CSS allowing users to quickly get recipes needed.
+                    <img class="project-img" src="./images/express.png" alt="">
+                    <h4>Recipe Webiste</h4>
+                    <p class="project-highlight">
+                        Used HTML and CSS to create a recipe website
                     </p>
                     <div class="project-buttons">
-                        <button class="git-code">
-                            <a class="project-links" href="https://github.com/AlonsoBTech/odin-recipes" target="_blank">View Code
-                            </a>
-                        </button>
-                        <button class="live-preview">
-                            <a class="project-links" href="https://alonsobtech.github.io/odin-recipes/" target="_blank">Live Preview</a>
-                        </button>
+                        <button class="project-links"><a href="https://github.com/AlonsoBTech/odin-recipes" target="_blank">Git Repo</a></button>
+                        <button class="project-links"><a href="https://alonsobtech.github.io/odin-recipes/" target="_blank">Live Preview</a></button>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="contact-me">
-            <h2>Contact Me</h2>
-            <div class="contact-form>">
-                <form>
-                    <div class="form-item">
-                        <label for="full_name">Full Name:</label>
-                        <input type="text" name="first_name" id="first_name">
-                    </div>
-                    <div class="form-item">
-                        <label for="subject">Subject:</label>
-                        <input type="text" name="subject" id="subject">
-                    </div>
-                    <div class="form-item">
-                        <label for="message">Message:</label>
-                        <input type="text" name="message" id="message">
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </div>
+        </section>
+
+        <footer>
+            <ul class="footer">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://docs.google.com/document/d/1HQh9-OSu0ft9PGri0E1QWRxd9ifWR-iT/pub" target="_blank">Résumé</a></li>
+            </ul>
+
+            <p class="copyright">
+                © All Rights Reserved | Alonso Braithwaite
+            </p>
+        </footer>
     </body>
 </html>
