@@ -339,36 +339,27 @@ footer {
     }
 }
 
-@media(max-width:600px){
-    #menu-icon {
-        display: block;
-        color: #f9faf8;
-        font-size: 24px;
+@media(min-width: 320px) and (max-width:600px){
+    header{
+        position: fixed;
+        margin-bottom: 50px;
+        width: 100vw;
+        height: auto;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        background-color: #1f2937;
+        width: 100vw;
+        margin: 0;
     }
     .logo{
         font-size: 24px;
     }
-    .nav-links{
-        position: fixed;
-        right: 100%;
-        top: 0;
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-        background-color: #1f2937;
-        color: #e5e7eb;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: .3s ease;
-    }
-    .nav-links.active{
-        display: block;
-        right: 0;
-    }
-    .nav-links a {
-        display: block;
+    .about-container{
+        margin-top: 100px;
     }
     .project-links {
         padding: 10px 20px;
@@ -383,6 +374,7 @@ footer {
         font-size: 50px;
     }
     #profile-pic {
+        margin-top: 30px;
         width: 70vw;
     }
     .project-buttons a {
