@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style-type: none;
     scroll-behavior: smooth;
-    font-family: Georgia, sans-serif;
+    font-family: "Georama", sans-serif;
 }
 
 body {
@@ -19,6 +19,10 @@ header {
     top: 0;
     background-color: #1f2937;
     padding: 10px;
+}
+
+p {
+    font-size: 18px;
 }
 
 .header {
@@ -182,6 +186,7 @@ h2 {
     background-color: #1f2937;
     color: #e5e7eb;
     font-size: 24px;
+    flex-shrink: 1;
 }
 
 .projects {
@@ -271,40 +276,6 @@ footer {
     color: #e5e7eb;
 }
 
-@media screen and (min-width:769px) and (max-width:884px){
-    .nav-links{
-        gap: 20px;
-    }
-    #profile-pic{
-        width: 50vw;
-    }
-    .social{
-        display: flex;
-        gap: 20px;
-        font-size: 20px;
-    }
-    .tech{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-    .stack-img{
-        width: 10vw;
-    }
-    .soft{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .project-buttons{
-        gap: 20px;
-    }
-}
-
 @media(max-width:768px){
     .about-container {
         display: flex;
@@ -322,7 +293,7 @@ footer {
     }
     .social {
         display: flex;
-        font-size: 40px;
+        font-size: 50px;
         gap: 20px;
     }
     .stack-img {
@@ -339,28 +310,62 @@ footer {
         display: flex;
         flex-direction: column;
     }
+    .project-buttons a {
+        font-size: 24px;
+    }
+    p{
+        font-size: 28px;
+    }
+    h3, .tech-title, .soft-title{
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 38px;
+    }
+    h1{
+        font-size: 46px;
+    }
+    footer a {
+        font-size: 24px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    header .nav-links a{
+        font-size: 20px;
+    }
+    .logo{
+        font-size: 24px;
+    }
 }
 
 @media(max-width:600px){
     #menu-icon {
         display: block;
         color: #f9faf8;
+        font-size: 24px;
     }
-    .nav-links {
-        display: flex;
-        flex-direction: column;
+    .logo{
+        font-size: 24px;
+    }
+    .nav-links{
         position: absolute;
         right: 100%;
-        padding: 10px;
+        top: 0;
+        width: 100%;
         text-align: center;
-        color: #e5e7eb;
-        margin-top: 20px;
-        background-color: #1f2937;
-        display: none;
-    }
-    .nav-links li {
-        margin-top: 10px;
         padding: 10px;
+        background-color: #1f2937;
+        color: #e5e7eb;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links.active{
+        display: block;
+    }
+    .nav-links a {
+        display: block;
     }
     .project-links {
         padding: 10px 20px;
@@ -369,7 +374,7 @@ footer {
         font-size: 16px;
     }
     .stack-img {
-        width: 40vw;
+        width: 30vw;
     }
     .social {
         font-size: 50px;
@@ -377,7 +382,25 @@ footer {
     #profile-pic {
         width: 70vw;
     }
-    .nav-links.active {
-        display: block;
+    .project-buttons a {
+        font-size: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+    h3, .tech-title, .soft-title{
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    footer a {
+        font-size: 20px;
+    }
+    h4{
+        font-size: 20px;
     }
 }
