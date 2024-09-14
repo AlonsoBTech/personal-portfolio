@@ -139,6 +139,7 @@ h2 {
 .tech-stack {
     padding: 20px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .tech-title {
@@ -170,6 +171,7 @@ h2 {
 .soft-skills {
     padding: 20px;
     margin: 20px auto;
+    flex-wrap: wrap;
 }
 
 .soft {
