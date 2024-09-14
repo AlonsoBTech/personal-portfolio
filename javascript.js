@@ -1,7 +1,7 @@
-let menuIcon = document.querySelector('#menu-icon');
-let navLinks = document.querySelector('.nav-links');
+const menuIcon = document.querySelector('#menu-icon');
+const navLinks = document.querySelector('.nav-links');
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('fa-solid');
+menuIcon.addEventListener('click', () => {
+    menuIcon.classList.toggle('active');
     navLinks.classList.toggle('active');
-}
+})

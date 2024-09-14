@@ -347,7 +347,7 @@ footer {
         font-size: 24px;
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         right: 100%;
         top: 0;
         width: 100%;
@@ -357,10 +357,13 @@ footer {
         color: #e5e7eb;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        transition: .3s ease;
     }
     .nav-links.active{
         display: block;
+        right: 0;
     }
     .nav-links a {
         display: block;
@@ -372,7 +375,7 @@ footer {
         font-size: 16px;
     }
     .stack-img {
-        width: 30vw;
+        width: 20vw;
     }
     .social {
         font-size: 50px;
