@@ -213,7 +213,6 @@ h2 {
     flex-direction: column;
     align-items: center;
     max-width: 400px;
-    height: auto;
     padding: 20px;
     border-radius: 10px;
     border: 2px solid #1f2937;
@@ -221,8 +220,7 @@ h2 {
 }
 
 .project-img {
-    width: 300px;
-    height: auto;
+    max-width: 300px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
